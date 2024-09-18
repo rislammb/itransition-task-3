@@ -40,6 +40,7 @@ class GameRules {
   }
 
   printHelpTable() {
+    const movesLength = this.moves.length;
     const table = new Table({
       head: ["v PC/User >", ...this.moves],
       colWidths: new Array(movesLength + 1),
